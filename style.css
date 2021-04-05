@@ -1050,3 +1050,6 @@ h4 {
 .description_ecrite {
     font-size: 20px;
 }
+a:focus {
+    border:black 1px solid;
+}
