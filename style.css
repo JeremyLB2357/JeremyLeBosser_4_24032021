@@ -284,7 +284,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 3.5rem;
 }
 
 .navbar {
@@ -295,7 +295,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -325,7 +325,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.75rem;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -659,17 +659,17 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 3.8rem;
 }
 
 .hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 3.8rem;
 }
 
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .tight-width-whitespace {
@@ -686,7 +686,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "Open Sans";
 }
 
@@ -695,7 +695,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -705,12 +705,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 2rem;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -1037,18 +1037,26 @@ h4 {
 
 .citation_texte {
     color: #575757;
-    font-size: 18px;
+    font-size: 1.7rem;
     font-style: italic;
     width: 70%;
     padding: none;
     margin: auto;
     border: none;
 }
+@media (max-width: 767px) {
+    .citation_texte {
+        width: 100%;
+    }
+    p {
+        font-size: 1.5rem;
+    }    
+}
 .citation_auteur {
     color: #575757;
 }
 .description_ecrite {
-    font-size: 20px;
+    font-size: 2rem;
 }
 a:focus {
     border:black 1px solid;
