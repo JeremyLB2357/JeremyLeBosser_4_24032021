@@ -818,17 +818,17 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la_chouette_agence_compress.jpg");
     background-size: cover;
 }
 @media (max-width: 767px) {
     .bg-banniere {
-        background-image: url("img/photo_baniere-50.jpg");
+        background-image: url("img/photo_baniere_50_compress.jpg");
         background-size: cover;
     }
 }
 .bg-presentation {
-    background-image: url("img/photo_background.jpg");
+    background-image: url("img/photo_background_compress.jpg");
 }
 
 @media (max-width: 1024px) {
