@@ -819,8 +819,14 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-size: cover;
 }
-
+@media (max-width: 767px) {
+    .bg-banniere {
+        background-image: url("img/photo_baniere-50.jpg");
+        background-size: cover;
+    }
+}
 .bg-presentation {
     background-image: url("img/photo_background.jpg");
 }
@@ -1060,4 +1066,15 @@ h4 {
 }
 a:focus {
     border:black 1px solid;
+}
+
+.img-responsive{
+    width: 270px;
+    height: 270px;
+}
+@media (max-width: 767px) {
+    .img-responsive{
+        width: 330px;
+        height: 330px;
+    }
 }
