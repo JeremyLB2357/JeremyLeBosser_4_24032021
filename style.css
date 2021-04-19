@@ -284,7 +284,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 3.5rem;
 }
 
 .navbar {
@@ -295,7 +295,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -325,7 +325,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.75rem;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -659,17 +659,17 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 3.8rem;
 }
 
 .hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 3.8rem;
 }
 
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 
 .tight-width-whitespace {
@@ -686,7 +686,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "Open Sans";
 }
 
@@ -695,7 +695,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -705,12 +705,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 2rem;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -753,7 +753,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(124, 33, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -771,15 +771,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #AB2500;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFEF52!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #AB2500;
     color: #FFFFFF!important;
 }
 
@@ -797,7 +797,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #AB2500!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -818,11 +818,17 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la_chouette_agence_compress.jpg");
+    background-size: cover;
 }
-
+@media (max-width: 767px) {
+    .bg-banniere {
+        background-image: url("img/photo_baniere_50_compress.jpg");
+        background-size: cover;
+    }
+}
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/photo_background_compress.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +854,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +878,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +886,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1038,5 +1038,43 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+.citation_texte {
+    color: #575757;
+    font-size: 1.7rem;
+    font-style: italic;
+    width: 70%;
+    padding: none;
+    margin: auto;
+    border: none;
+}
+@media (max-width: 767px) {
+    .citation_texte {
+        width: 100%;
+    }
+    p {
+        font-size: 1.5rem;
+    }    
+}
+.citation_auteur {
+    color: #575757;
+}
+.description_ecrite {
+    font-size: 2rem;
+}
+a:focus {
+    border:black 1px solid;
+}
+
+.img-responsive{
+    width: 270px;
+    height: 270px;
+}
+@media (max-width: 767px) {
+    .img-responsive{
+        width: 330px;
+        height: 330px;
     }
 }
